@@ -1,0 +1,22 @@
+[
+    {
+        "testName": "Valid username and valid password",
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "expectedToPass": true
+    },
+    {
+        "testName": "Invalid username and valid password",
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "expectedToPass": false,
+        "errorMessage": "Epic sadface: Sorry, this user has been locked out."
+    },
+    {
+        "testName": "Valid username and invalid password",
+        "username": "standard_user",
+        "password": "invalid_password",
+        "expectedToPass": false,
+        "errorMessage": "Epic sadface: Username and password do not match any user in this service"
+    }
+]
